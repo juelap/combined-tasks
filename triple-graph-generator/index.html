@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta charset=utf-8 />
+<title>RDF Triple Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.1/raphael.js"></script>
+<script type="text/javascript" src="dracula-master/dist/dracula.dev.js"></script>
+</head>
+
+<body>
+<div id="page-content">
+<h2>RDF Triple Form</h2>
+<form id="triple_form">
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject"><br>
+  <label for="predicate">Predicate:</label><br>
+  <input type="text" id="predicate"><br>
+  <label for="object">Object:</label><br>
+  <input type="text" id="object"><br><br>
+  <input type="button" id="save_button" value="Save"onclick="insert_triples();"></input>
+  <input type="button" id="display_button" value="Display" onclick="display_triples();"></input>
+</form>
+<div id="message_insertion"></div>
+<div id="message_display"></div>
+<br><br><br>
+<input type="button" id="generate_graph_button" value="Generate Graph" onclick="generate_graph();"></input>
+<div id="graph" style="height: 400px; width: 600px;"></div>
+</div>
+</body>
+
+</html>

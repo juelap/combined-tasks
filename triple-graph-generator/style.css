@@ -1,0 +1,7 @@
+#page-content { 
+    width: 200px;
+    height: 200px;
+    margin-left: -100px; /* Half of width */
+    margin-top: -100px; /* Half of height */
+    position: absolute; left: 50%; top: 15%;
+}
